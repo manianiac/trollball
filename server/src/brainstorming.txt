@@ -1,0 +1,44 @@
+similar to bloodbowl/rugby/soccer
+13 random players
+    stats
+        pass
+        catch
+        intercept
+
+        run
+        block
+
+        fight
+        shoot
+
+        luck
+        gumption
+        literate - yes/no
+        alcohol tolerance
+        civic engagement
+
+
+20 minute games
+    event every 20 seconds
+    5 minute overtimes
+
+trollball
+    7 zones
+    Goal - 2 point - x-field - center field - y-field - 2 point - Goal
+
+Actions
+    pass - change which player has the ball. Use 'pass' skill to not miss, 'catch' to not fumble, 'intercept' if missed
+        3 players, 2 attacking team 1 defending team
+    run - change which zone you're in. Use 'run' vs 'block'
+        2 players, 1 attacking 1 defending
+    fight - 2 players fight with 'fight' loser is removed until end of period
+        2 players, 1 attacking 1 defending
+    shoot - try to score from the 2 point zone. use 'shoot' or fumble
+        1 player
+    pick up - grab a loose trollball
+
+
+
+
+Team Names
+    The Tortell Privateers
