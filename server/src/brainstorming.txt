@@ -1,21 +1,26 @@
+A magelord simulation of Trollball made by a Bored Lich.
+
 similar to bloodbowl/rugby/soccer
 13 random players
     stats
         pass
         catch
-        intercept
 
         run
         block
 
         fight
+
         shoot
 
         luck
+
         gumption
         literate - yes/no
         alcohol tolerance
         civic engagement
+        pregame ritual
+
 
 
 20 minute games
@@ -27,17 +32,25 @@ trollball
     Goal - 2 point - x-field - center field - y-field - 2 point - Goal
 
 Actions
-    pass - change which player has the ball. Use 'pass' skill to not miss, 'catch' to not fumble, 'intercept' if missed
-        3 players, 2 attacking team 1 defending team
-    run - change which zone you're in. Use 'run' vs 'block'
-        2 players, 1 attacking 1 defending
-    fight - 2 players fight with 'fight' loser is removed until end of period
-        2 players, 1 attacking 1 defending
-    shoot - try to score from the 2 point zone. use 'shoot' or fumble
-        1 player
-    pick up - grab a loose trollball
+    Always
+        pass - change which player has the ball. Use 'pass' skill to not miss, 'catch' to not fumble
+            2 players, 2 attacking Team
+        run - change which zone you're in. Use 'run' vs 'block'
+            2 players, 1 attacking 1 defending
+        fight - 2 players fight with 'fight' loser is removed until end of period
+            2 players, 1 attacking 1 defending
+    Conditional
+        In 2 point zone
+            shoot - try to score from the 2 point zone. use 'shoot' or fumble
+                1 player
+        Loose trollball
+            pick up - grab a loose trollball
+    Random event
+        /shrug
 
 
+Events
+    alcohol tolerance should translate to some sort of buff during the weather event "blessings of alara"
 
 
 Team Names
