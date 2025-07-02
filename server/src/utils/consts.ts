@@ -1,8 +1,5 @@
-interface commonProperties {
-  name: string
-}
-
-interface team extends commonProperties {
+export interface team {
+  name: TEAM_NAMES
   players: player[]
   stadium: stadium
   luck: number
@@ -11,12 +8,13 @@ interface team extends commonProperties {
   healer: player
 }
 
-interface player extends commonProperties {
-  team: team
+export interface player {
+  name: string
+  team: TEAM_NAMES
   stats: stats
 }
 
-interface stats {
+export interface stats {
   // stats that matter
   pass: number
   catch: number
@@ -32,28 +30,31 @@ interface stats {
   pregame_ritual: string
 }
 
-interface stadium extends commonProperties {
+export interface stadium {
+  name: string
   location: string
   modifiers: string[]
 }
 
-interface activePlayers {
+export interface activePlayers {
   homeTeamActive: player[]
   homeTeamDisabled: player[]
   awayTeamActive: player[]
   awayTeamDisabled: player[]
 }
 
-interface match {
+export interface match {
   homeTeam: team
   awayTeam: team
   arena: stadium
   activePlayers: activePlayers
   possession: player | null
+  possessionTeam: TEAM_NAMES
   currentZone: ZONE
+  fiction: string[]
 }
 
-enum ZONE {
+export enum ZONE {
   'Home Goal' = 1,
   'Home 2-Point',
   'Home Field',
@@ -63,8 +64,29 @@ enum ZONE {
   'Away Goal'
 }
 
-const PREGAME_RITUAL = ['']
+export enum TEAM_NAMES {
+  'No Team' = -1,
+  'The Tortell Privateers',
+  'The Confluence Pre-Corpus'
+}
 
-const STADIUM_MODIFIERS = ['']
+export const PREGAME_RITUAL = ['']
 
-const GAME_DURATION = 60 //rounds
+export const STADIUM_MODIFIERS = ['']
+
+export const GAME_DURATION = 60 //rounds
+
+export const STARTING_ROSTER_SIZE = 10
+
+export const OFFENSIVE_ACTIONS = [
+  { name: 'Run', chance: 20 },
+  { name: 'Pass', chance: 20 },
+  { name: 'Shoot', chance: 20 },
+  { name: 'Heal', chance: 20 },
+  { name: 'Fight', chance: 20 }
+]
+
+export const DEFENSIVE_ACTIONS = [
+  { name: 'Fight', chance: 20 },
+  { name: 'Heal', chance: 20 }
+]

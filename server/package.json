@@ -15,5 +15,10 @@
     "@types/node": "^24.0.8",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@google/genai": "^1.8.0",
+    "markov-chains-text": "^1.0.0",
+    "ts-markov": "^1.0.0"
   }
 }
