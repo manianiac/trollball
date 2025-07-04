@@ -17,7 +17,7 @@ export const boundedNumber = (
 }
 
 export const selectRandomPlayer = (players: player[]): player => {
-  return players[getRandomInt(0, players.length)]
+  return players[getRandomInt(0, players.length - 1)]
 }
 
 export const getRandomInt = (min: number, max: number): number => {
@@ -26,12 +26,10 @@ export const getRandomInt = (min: number, max: number): number => {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-const key = 'AIzaSyAzPqjPwm9xdWVekIFp3E2sCA_mONLLOGg'
-const ai = new GoogleGenAI({ apiKey: key })
+const ai = new GoogleGenAI({})
 export const generateGemma = async (
   inputString: string
 ): Promise<string | undefined> => {
-  console.log('Input String', inputString)
   const response = await ai.models.generateContent({
     model: 'gemma-3-27b-it',
     contents: inputString

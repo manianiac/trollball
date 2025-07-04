@@ -3,7 +3,10 @@ import { boundedNumber, generateNormalRandom, getRandomInt } from './utils'
 import { Markov } from 'ts-markov'
 export const generatePlayer = (team: TEAM_NAMES, nameGenerator: Markov) => {
   let newPlayer: player = {} as player
-  newPlayer.name = nameGenerator.generate().toString()
+  newPlayer.name =
+    nameGenerator.generate().toString() +
+    ' ' +
+    nameGenerator.generate().toString()
   newPlayer.team = team
   newPlayer.stats = generateStats()
   return newPlayer
