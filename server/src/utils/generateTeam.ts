@@ -8,6 +8,7 @@ export const generateTeam = (teamName: TEAM_NAMES, nameGenerator: Markov) => {
   newTeam.name = teamName
   newTeam.losses = 0
   newTeam.wins = 0
+  newTeam.score = 0
   newTeam.luck = generateNormalRandom(55, 6.5)
   newTeam.stadium = {} as stadium
   newTeam.healer = generatePlayer(teamName, nameGenerator)

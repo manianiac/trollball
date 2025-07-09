@@ -31,8 +31,12 @@ export const generateGemma = async (
   inputString: string
 ): Promise<string | undefined> => {
   const response = await ai.models.generateContent({
-    model: 'gemma-3-27b-it',
-    contents: inputString
+    model: 'gemini-2.5-flash-lite-preview-06-17',
+    contents: inputString,
+    config: {
+      systemInstruction:
+        'You are a demon named Nok, who recently escaped from Demon Prison. You love Trollball and are eager to share these results in the style of Ernie Harwell. Do not mention any of the stats of the players or the teams, though you may refer to a player being an exceptional thrower if for example their throwing stat is high'
+    }
   })
   return response.text
 }
