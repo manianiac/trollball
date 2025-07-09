@@ -222,7 +222,7 @@ const pass = (gameState: match, activePlayer: player): match => {
       )
     }
   }
-  let throwSuccess = calculateSuccess(activePlayer.stats.throw)
+  let throwSuccess = calculateSuccess(activePlayer.stats.pass)
   let catchSuccess = calculateSuccess(catchingPlayer.stats.catch)
   if (throwSuccess) {
     gameState = advanceZone(gameState)
