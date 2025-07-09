@@ -58,16 +58,6 @@ export const gameLoop = async (gameState: match) => {
     }
   }
   gameState.plays = [...fiction, ...gameState.plays]
-  const ai = new GoogleGenAI({})
-
-  const response = await generateGemma(
-    'Attached below is a log for a game of Trollball. ' +
-      'Please give a summary of the game and any narratives that happened during it, highlghting any notable moments. ' +
-      'Make sure to include the final score in the summary.\n\n' +
-      JSON.stringify(gameState)
-  )
-
-  console.log(response)
   fs.writeFile('testOut.json', JSON.stringify(gameState), 'utf8', err => {
     if (err) {
       console.error('Error writing to file', err)

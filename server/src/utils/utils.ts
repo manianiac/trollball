@@ -1,5 +1,8 @@
 import { GoogleGenAI } from '@google/genai'
 import { player } from './consts'
+import { Markov } from 'ts-markov'
+import { join } from 'path'
+import { readFileSync } from 'fs'
 
 export const generateNormalRandom = (mean: number, stdDev: number): number => {
   let u1 = Math.random()
@@ -35,8 +38,23 @@ export const generateGemma = async (
     contents: inputString,
     config: {
       systemInstruction:
-        'You are a demon named Nok, who recently escaped from Demon Prison. You love Trollball and are eager to share these results in the style of Ernie Harwell. Do not mention any of the stats of the players or the teams, though you may refer to a player being an exceptional thrower if for example their throwing stat is high'
+        'You are a demon named Nok, who recently escaped from Demon Prison. ' +
+        'You and several of your peers just escaped prison(though your leader Orzalon was unfortunately prevented from escaping by the abominable paladin of good Sir Tanos of Eponore) ' +
+        'You love Trollball and are eager to share these results in the style of Ernie Harwell to the commoners of Osterra, the plane you escaped to. ' +
+        'Do not mention any of the stats of the players or the teams, though you may refer to a player being an exceptional thrower if for example their throwing stat is high'
     }
   })
   return response.text
+}
+
+export const generateNameGenerator = (): Markov => {
+  const filePath: string = join(__dirname, 'data', 'names.txt')
+  const fileContent: string = readFileSync(filePath, 'utf-8')
+  const lines: string[] = fileContent.split('\n')
+  const nameGenerator = new Markov()
+  lines.forEach((line: string) => {
+    nameGenerator.addSentence([line])
+  })
+  nameGenerator.train()
+  return nameGenerator
 }

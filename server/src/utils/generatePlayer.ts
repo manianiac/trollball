@@ -1,6 +1,5 @@
 import {
   player,
-  team,
   stats,
   TEAM_NAMES,
   PRONOUNS,
@@ -40,11 +39,15 @@ const generateStats = () => {
 }
 
 const generateIndividualStat = () => {
-  const mean = 50
+  const mean = 55
   const stdDev = 6.5
   const upperBound = 80
   const lowerBound = 20
-  return boundedNumber(generateNormalRandom(55, 6.5), 80, 20)
+  return boundedNumber(
+    generateNormalRandom(mean, stdDev),
+    upperBound,
+    lowerBound
+  )
 }
 
 const generatePronoun = (): PRONOUNS => {
@@ -55,6 +58,7 @@ const generatePronoun = (): PRONOUNS => {
   })
   return playerPronoun
 }
+
 const random = (array: string[]): string => {
   return array[getRandomInt(0, array.length)]
 }

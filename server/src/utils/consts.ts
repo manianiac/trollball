@@ -157,7 +157,11 @@ export enum TEAM_NAMES {
   'The Haven Lights' = 'The Haven Lights',
   'The Desert Spectres' = 'The Desert Spectres',
   'The Ebon Gate Corruptors' = 'The Ebon Gate Corruptors',
-  'The Wyrmwood Stronghammers' = 'The Wyrmwood Stronghammers'
+  'The Wyrmwood Stronghammers' = 'The Wyrmwood Stronghammers',
+  'The New Monteforte Chaos Creatures' = 'The New Monteforte Chaos Creatures',
+  'The Kerlauger Runeguard' = 'The Kerlauger Runeguard',
+  'The Starlight Bazaar Bizarres' = 'The Starlight Bazaar Bizarres',
+  "The Oread's Summit Tamers" = "The Oread's Summit Tamers"
 }
 
 export const PREGAME_RITUAL = [
