@@ -1,5 +1,5 @@
 {
-  "name": "Oread's Summit Tamers",
+  "name": "The Oread's Summit Tamers",
   "losses": 0,
   "wins": 0,
   "score": 0,
@@ -7,7 +7,7 @@
   "stadium": {},
   "healer": {
     "name": "Carn Tibbetts",
-    "team": "Oread's Summit Tamers",
+    "team": "The Oread's Summit Tamers",
     "stats": {
       "pass": 54,
       "catch": 51,
@@ -27,7 +27,7 @@
   "players": [
     {
       "name": "Odericus Juxon",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 51,
         "catch": 62,
@@ -46,7 +46,7 @@
     },
     {
       "name": "Kass Fogel",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 55,
         "catch": 46,
@@ -65,7 +65,7 @@
     },
     {
       "name": "Zadoc Wyatan",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 53,
         "catch": 67,
@@ -84,7 +84,7 @@
     },
     {
       "name": "Alwyn Wandy",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 58,
         "catch": 34,
@@ -103,7 +103,7 @@
     },
     {
       "name": "Dric Trilley",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 53,
         "catch": 54,
@@ -122,7 +122,7 @@
     },
     {
       "name": "Swamy Ahasuerus",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 69,
         "catch": 53,
@@ -141,7 +141,7 @@
     },
     {
       "name": "Clippard Burr",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 38,
         "catch": 60,
@@ -160,7 +160,7 @@
     },
     {
       "name": "Mitran Mariand",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 58,
         "catch": 54,
@@ -179,7 +179,7 @@
     },
     {
       "name": "Edme Virgil",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 60,
         "catch": 45,
@@ -198,7 +198,7 @@
     },
     {
       "name": "Saloma Talich",
-      "team": "Oread's Summit Tamers",
+      "team": "The Oread's Summit Tamers",
       "stats": {
         "pass": 66,
         "catch": 53,
